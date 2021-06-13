@@ -1,0 +1,77 @@
+.service {
+	background: url('../img/service/bg-code.jpg') 0 0/cover no-repeat;
+	height: 400px;
+	position: relative;
+
+	@media (min-width: 320px) and (max-width: 767.9px) {
+		margin-bottom: 130vh;
+	}
+
+	@media (min-width: 768px) and (max-width: 1023.9px) {
+		margin-bottom: 80vh;
+	}
+
+	@media (min-width: 1024px) and (max-width: 1439.9px) {
+		margin-bottom: 50vh;
+	}
+	@media (min-width: 1440px) and (max-width: 2560px) {
+		margin-bottom: 60vh;
+	}
+	&__body {
+		background-color: rgba(255, 255, 255, 1);
+		text-align: $txt-align;
+		padding: 5vh 5vw;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		right:5%;
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+		@media (min-width: 320px) and (max-width: 768.9px) {
+			position: absolute;
+			top: 15%;
+			left: 5%;
+			right:5%;
+		}
+	}
+
+	&__title {
+		padding-top: 3vh;
+		margin-bottom: 7vh;
+	}
+
+	&__row {
+		@include flexbox();
+		justify-content: space-between;
+		margin: -3vh -3vw;
+
+		@media (min-width: 320px) and (max-width: 1024px) {
+			flex-direction:column;
+		}
+	}
+
+	&__column {
+		padding: 3vh 3vw;
+		flex: 0 1 33.333%;
+	}
+
+	&__item {
+		margin-bottom: 3vh;
+		@include adaptiv-font(30,24);
+	}
+
+	&__name {
+		font-weight: 700;
+		margin-bottom: 3vh;
+		@include adaptiv-font(36,24);
+	}
+
+
+
+	&__text {
+		opacity: 0.9;
+		text-align: $txt-align;
+		@include adaptiv-font(30,24);
+	}
+
+}

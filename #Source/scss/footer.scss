@@ -1,0 +1,26 @@
+.footer {
+	background: $bg-black1;
+	&__body {
+		padding: 1vh 1vw;
+		text-align: $txt-align;
+		@include flexbox();
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+
+	&__text {
+		color:$clr-white1;
+		@include adaptiv-font(28,24);
+	}
+}
+
+.fa-arrow-alt-circle-up {
+	@include adaptiv-font(28,24);
+	color:$clr-white1;
+	cursor: pointer;
+	&:hover {
+		color:$bg-grey1;
+	}
+}

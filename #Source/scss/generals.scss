@@ -1,0 +1,48 @@
+.gap-top {
+	margin-top: 120px;
+}
+
+.gap-bottom {
+	margin-bottom: 120px;
+}
+
+.content {
+	overflow: hidden;
+}
+
+
+.title {
+	color: $clr-black1;
+	font-size: $fz-title;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	transform: translateY(0);
+	transition: transform 1s;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		height: 4px;
+		width: 50%;
+		box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
+		border-radius: 20%;
+		background-color: rgba(0, 0, 0, 0.2);
+		transform: translate(-50%, 0);
+		transition: transform 1.5s;
+	}
+
+	&:hover {
+		transform: translateY(-40px);
+		transition: transform 1.2s;
+	}
+
+	&:hover::after {
+		transform: translate(-50%, 40px) scale(0.75);
+		transition: transform 1.2s;
+	}
+}
+

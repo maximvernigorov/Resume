@@ -1,0 +1,85 @@
+ //________Миксины_____________
+
+ @import "mixins.scss";
+
+//___________________________________
+
+
+//_______Переменные_____________
+
+@import "variables.scss";
+
+//___________________________________
+
+//_______Основные блоки_____________
+
+@import "generals.scss";
+
+//___________________________________
+
+
+//__________________Шрифты______________
+
+//__________________Cormorant______________
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700&display=swap');
+//_______________________________________
+
+//__________________Montserrat______________
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+//_______________________________________
+
+
+
+//________Переменные и контейнер_____________
+
+@import "container.scss";
+
+//___________________________________
+
+
+
+//________Обнуляющий стиль____________
+
+@import "null.scss";
+
+//___________________________________
+
+
+//________Общие параметры, оболочка, контейенр_____________
+
+body {
+	color: $clr-black1;
+	font-size: $fz;
+	&._lock {
+		overflow: hidden;
+	}
+
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+}
+
+
+//______________________________________
+
+
+//________ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ_____________
+@import "header.scss";
+@import "home.scss";
+@import "about.scss";
+@import "skills.scss";
+@import "service.scss";
+@import "works.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "button.scss";
+@import "spoiler.scss";
+@import "popup.scss";
+//______________________________________
+
+
+
+

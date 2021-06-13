@@ -1,0 +1,16 @@
+.about {
+
+	&__body {
+text-align: $txt-align;
+}
+
+&__title {
+	margin-bottom: 3vh;
+}
+
+&__subtitle {
+	@include adaptiv-font(36,24);
+	color: $clr-black2;
+	margin-bottom: 3vh;
+}
+}

@@ -1,0 +1,90 @@
+.contact {
+	&__body {
+		text-align: $txt-align;
+	}
+
+	&__row {
+		@include flexbox();
+		flex-wrap:wrap;
+		justify-content: space-between;
+		margin: -4vh -4vw;
+		@include adaptiv-font(28,24);
+
+		@media (min-width: 320px) and (max-width: 768px) {
+			flex-direction:column;
+		}
+	}
+
+	&__title {
+		margin-bottom: 5vh;
+	}
+
+	&__text {
+		@include adaptiv-font(28,24);
+		margin-bottom: 7vh;
+	}
+
+	&__column {
+		padding: 4vh 4vw;
+		flex: 1 0 33.333%;
+	}
+
+	&__item {
+		cursor: pointer;
+		position: relative;
+		top: 0;
+		padding: 3% 3%;
+		transform: scale(1);
+		box-shadow: 0 0 5px 5px rgba(34, 60, 80, 0.2);
+		transition: box-shadow 0.5s, transform 0.5s;
+
+		&:active {
+			top: 10%;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+			box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+			transition: box-shadow 0.5s, transform 0.5s;
+		}
+	}
+
+
+	&__social-text{
+		@include adaptiv-font(30,24);
+		color: $clr-black1; 
+	}
+}
+
+
+
+
+
+
+
+.fa-telegram {
+	color: #0FA0EF;
+}
+
+
+
+.fa-phone-alt {
+	color: #3FBF4E;
+}
+
+.fa-at {
+	color: #EE102E;
+
+}
+
+.fa-whatsapp {
+	color: #20DE9F;
+}
+
+.fa-github {
+	color: #B522DC;
+}
+
+.fa-viber {
+	color: #8A35C9;
+}

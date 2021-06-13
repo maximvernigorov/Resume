@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Resume</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css" />
+	<meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header lock-padding">
+			<div class="container">
+				<div class="header__body">
+					<p class="header__logo">maxver.
+					</p>
+					<div class="header__menu menu">
+						<div class="menu__icon">
+							<span></span>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__list"> 
+								<li class="menu__reference">
+									<a data-goto=".home" href="#" class="menu__link">Домашняя</a>
+								</li>
+								<li class="menu__reference">
+									<a data-goto=".about" href="#" class="menu__link">Обо мне</a>
+								</li>
+								<li class="menu__reference">
+									<a data-goto=".service" href="#" class="menu__link">Услуги</a>
+								</li>
+								<li class="menu__reference">
+									<a data-goto=".works" href="#" class="menu__link">Портфолио</a>
+								</li>
+								<li class="menu__reference">
+									<a data-goto=".contact" href="#" class="menu__link">Связь</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</header>		<main class="content">
+			<section class="home">
+				<div class="home__content">
+					<div class="home__container">
+						<div class="home__body">
+							<h1 class="home__title">Максим Вернигоров</h1>
+							<p class="home__subtitle">Фронтенд-разработчик</p>
+							<div class="home__button home__button_black"><a data-goto=".about" href="#" class="button button_black"><span class="button__text">Обо мне</span></a>
+							</div>
+							<div class="home__button home__button_white"><a data-goto=".contact" href="#" class="button button_white "><span class="button__text">Узнать больше</span></a></div>
+
+						</div>
+					</div>
+				</div>
+				<div class="home__image">
+					<img src="img/home/my-image.jpg" alt="" class="home__img" />
+				</div>
+			</section>
+
+
+			<section class="about gap-top gap-bottom">
+				<div class="container">
+					<div class="about__body">
+						<h2 class="about__title title">Обо мне</h2>
+						<p class="about__subtitle">
+							Привет! Я <b>Максим</b>, фронтенд-разработчик и парень, слегка помешанный на качестве кода. Если у вас есть проект, который вы хотите начать, или считаете, что вам нужна моя помощь в чем-то, тогда свяжитесь со мной.</p>
+							<a href="#popup" class="button button_black popup-link"><span class="button__text">Моё резюме</span></a>
+						</div>
+					</div>
+				</section>
+<section class="skills gap-bottom">
+	<div class="container">
+		<div class="skills__body">
+			<h2 class="skills__title title">Мои навыки</h2>
+			<nav class="skills__menu">
+				<ul class="skills__list">
+					<li class="skills__column">
+						<span class="skills__column-name">html5</span>
+						<div class="skills__progressbar">
+							<span class="skills__progressbar-line" style="width: 87%"></span>
+						</div>
+					</li>
+					<li class="skills__column">
+						<span class="skills__column-name">Css3/bem</span>
+						<div class="skills__progressbar">
+							<span class="skills__progressbar-line" style="width: 80%"></span>
+						</div>
+					</li>
+					<li class="skills__column">
+						<span class="skills__column-name">Javascript/jquery</span>
+						<div class="skills__progressbar">
+							<span class="skills__progressbar-line" style="width: 50%"></span>
+						</div>
+					</li>
+					<li class="skills__column">
+						<span class="skills__column-name">Sass/scss/gulp</span>
+						<div class="skills__progressbar">
+							<span class="skills__progressbar-line" style="width: 70%"></span>
+						</div>
+					</li>
+					<li class="skills__column">
+						<span class="skills__column-name">Bootstrap</span>
+						<div class="skills__progressbar">
+							<span class="skills__progressbar-line" style="width: 40%"></span>
+						</div>
+					</li>
+					<li class="skills__column">
+						<span class="skills__column-name">Photoshop/figma/psd</span>
+						<div class="skills__progressbar">
+							<span class="skills__progressbar-line" style="width: 75%"></span>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</section>
+
+<section class="service">
+	<div class="container">
+		<div class="service__body">
+			<h2 class="service__title title">Что я могу</h2>
+			<div class="service__row">
+				<div class="service__column">
+					<div class="service__item">
+						<i class="fas fa-desktop"></i>
+					</div>
+					<h3 class="service__name">Фронтенд</h3>
+					<p class="service__text">Как разработчик JavaScript у меня есть опыт работы с методами HTML5 и CSS3, а так же с jQuery.Код понятен и лёгок в восприятии по БЭМ и V3C.</p>
+				</div>
+				<div class="service__column">
+					<div class="service__item">
+						<i class="fas fa-mobile"></i>
+					</div>
+					<h3 class="service__name">Отзывчивость</h3>
+					<p class="service__text">При данном подходе используются как медиа-запросы, так и процентное задание ширины компонентов. Используя данный вид верстки можно с уверенностью сказать, что сайт приспособится к любому устройству.</p>
+				</div>
+				<div class="service__column">
+					<div class="service__item">
+						<i class="fas fa-headset"></i>
+					</div>
+					<h3 class="service__name">Консультация</h3>
+					<p class="service__text">
+					Помимо предоставления услуг по разработке, я также могу помочь Вам оказанием бесплатной консультации. Вы сразу получите квалифицированный ответ на большинство технических вопросов.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="works">
+	<div class="container">
+		<div class="works__body">
+			<h2 class="works__title title">Последние работы</h2>
+			<div class="works__row">
+				<div class="works__column">
+					<div class="works__project-image">
+						<a target="_blank" href="https://maximvernigorov.github.io/Photograph/" class="works__project-link">
+							<img class="works__project-img" src="img/works/Photograph.jpg" alt="">
+						</a>
+					</div>
+					<div class="works__project-info">
+						<h3 class="works__project-name">Photograph</h3>
+						<p class="works__project-description">Уникальный сайт с интересным и адаптивным дизайном. В который входят: Меню burger, слайдер swiper и удобная форма поиска и всё это полностью адаптированный сайт начиная с разрешения iPhone5 "320px" заканчивая 4К "2560px".</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="band gap-top gap-bottom">
+		<img src="img/works/bg-works.jpg" alt="" class="band__image">
+	</div>
+</section>
+
+<section class="contact gap-bottom">
+	<div class="container">
+		<div class="contact__body">
+			<h2 class="contact__title title">На связи</h2>
+			<p class="contact__text">Каждому клиенту я готов уделить до 15 минут времени для оказания бесплатной консультации. Вы сразу получите квалифицированный ответ на большинство технических вопросов. Работаю ежедневно, с 9.00 до 23.00 МСК.</p>
+			<div class="contact__row">
+				<div class="contact__column">
+					<div class="contact__item">
+						<a href="https://t.me/maxim_vernigorov" target="_blank">
+							<i class="fab fa-telegram"></i>
+							<span class="contact__social-text">Telegram</span>
+						</a>
+					</div>
+				</div>
+				<div class="contact__column">
+					<div class="contact__item">
+						<a href="tel:+79996264928">
+							<i class="fas fa-phone-alt"></i>
+							<span class="contact__social-text">Телефон</span>
+						</a>
+					</div>
+				</div>
+				<div class="contact__column">
+					<div class="contact__item">
+						<a href="mailto:maximv.vernigorov@gmail.com">
+							<i class="fas fa-at"></i>
+							<span class="contact__social-text">Mail</span></a>
+						</div>
+					</div>
+					<div class="contact__column">
+						<div class="contact__item">
+							<a href="https://wa.me/+79996264928" target="_blank">
+								<i class="fab fa-whatsapp"></i>
+								<span class="contact__social-text">Whatsapp</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact__column">
+						<div class="contact__item">
+							<a href="https://github.com/maximvernigorov" target="_blank">
+								<i class="fab fa-github"></i>
+								<span class="contact__social-text">Github</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact__column">
+						<div class="contact__item">
+							<a href="https://skobelkin.ru/viber/79996264928" target="_blank">
+								<i class="fab fa-viber"></i>
+								<span class="contact__social-text">Viber</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<section id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="popup__close close-popup"><i class="fas fa-times"></i></a>
+					<div class="spoiler">
+						<div class="spoiler one">
+							<div class="spoiler__item">
+								<h3 class="spoiler__title">Гарантии:</h3>
+								<div class="spoiler__text">
+									<p class="spoiler__txt">В течение недели после передачи архива с готовой версткой я бесплатно и сразу исправляю свои ошибки которые могли быть пропущены при приеме работы и замечены позже.</p>
+								</div>
+							</div>
+							<div class="spoiler__item">
+								<h3 class="spoiler__title">Вид деятельности:</h3>
+								<div class="spoiler__text">
+									<p class="spoiler__txt">Вёрстка кроссбраузерная, валидная, адаптивная. Только чистый и понятный код.Верстаю из PSD, Sketch, Figma, Zeplin, Adobe XD. Адаптивность, отзывчивость (responsive), резина и CSS3\JS анимация сайтов.</p>
+								</div>
+							</div>
+							<div class="spoiler__item">
+								<h3 class="spoiler__title">Инструменты:</h3>
+								<div class="spoiler__text">
+									<p class="spoiler__txt">HTML (HTML5), CSS (CSS3), JS jQuery, SASS, GULP, Flexbox, Grid, БЭМ.</p>
+								</div>
+							</div>
+							<div class="spoiler__item">
+								<h3 class="spoiler__title">Ответственность:</h3>
+								<div class="spoiler__text">
+									<p class="spoiler__txt">Готов приступить прямо сейчас , я всегда довожу дело до конца НЕ нарушаю сроков при этом всегда с Вами на связи.
+									</p>
+								</div>
+							</div>
+							<div class="spoiler__item">
+								<h3 class="spoiler__title">Оплата:</h3>
+								<div class="spoiler__text">
+									<p class="spoiler__txt">По договорённости, в том числе любым удобным для Вас способом.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		</main>
+<footer class="footer">
+	<div class='container'>
+		<div class="footer__body">
+			<h3 class="footer__text">Все права защищены &#169;</h3>
+			<a data-goto=".home" class="button" href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+		</div>
+	</div>
+</footer>	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/b86a38242f.js" crossorigin="anonymous"></script> 
+	<script src="js/script.js" ></script>
+</body>
+</html>

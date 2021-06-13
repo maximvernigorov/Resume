@@ -1,0 +1,67 @@
+.spoiler {
+  padding: 1vh 2vw;
+  &__item {}
+  &__title {
+    cursor: pointer;
+    padding: 18px 30px;
+    margin: 10px 0px;
+    background: $bg-grey1;
+    position: relative;
+    font-size: 28px;
+    letter-spacing: 1.13px;
+  }
+  &__text {
+    display: none;
+    padding: 1vh 3vw;
+    @media (min-width: 320px) and (max-width: 768px) {
+      padding: 1vh 2vw;
+    }
+  }
+  &__txt {
+    font-size: 24px;
+  }
+
+}
+
+
+.spoiler__title:before,
+.spoiler__title:after{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2.5px;
+  right: 10px;
+  top: 33px;
+  background-color: $bg-black1;
+  transition: all 0.5s ease 0s;
+}
+.spoiler__title:before{
+  transform: rotate(0deg);
+}
+.spoiler__title:after{
+  transform: rotate(-90deg);
+}
+
+
+.spoiler__title.active { 
+  background-color: #011631;
+  color: $clr-white1;
+  transition: all 0.5s ease 0s;
+
+}
+
+
+.spoiler__title.active:before,
+.spoiler__title.active:after{
+  background-color: $bg-white1;
+}
+
+
+.spoiler__title.active:before{
+  transform: rotate(-40deg);
+
+}
+.spoiler__title.active:after{
+  transform: rotate(40deg);
+}
+

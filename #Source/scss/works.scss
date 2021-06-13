@@ -1,0 +1,58 @@
+.works {
+
+	&__body {
+		text-align: $txt-align;
+	}
+	&__title {
+		margin-bottom: 7vh;
+	}
+
+	&__project-image {
+		transition: box-shadow 0.8s, transform 0.8s;
+		&:hover {
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			transition: box-shadow 0.8s, transform 0.8s;
+		}
+		overflow: hidden;
+		position: relative;
+		padding: 0 0 50% 0;
+	}
+
+	&__project-img {
+		display: block;
+		position: absolute;
+		height: auto;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+
+	&__project-link {
+	}
+
+	&__project-info{
+		margin-top: 3vh;
+
+	}
+	&__project-name {
+		font-family: $font-family-secondary;
+		font-weight: 600;
+		margin-bottom: 3vh;
+		@include adaptiv-font(36,24);
+	}
+
+	&__project-description {
+		margin-bottom: 3vh;
+		@include adaptiv-font(28,24);
+	}
+}
+
+
+.band {
+	position: relative;
+	&__image {
+		object-fit:cover;
+		width: 100%;
+		height: 100%;
+	}
+}
